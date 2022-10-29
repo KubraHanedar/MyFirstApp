@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELLO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEr-vo-u4B">
+                                <rect key="frame" x="107" y="105" width="200" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="2ph-P4-fh0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pexels-nicole-avagliano-2312040" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KO6-tc-cNw">
+                                <rect key="frame" x="62" y="258" width="291" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="Enn-xQ-vR3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJv-7e-mYo">
+                                <rect key="frame" x="105" y="630" width="204" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="cD1-kR-jyh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change"/>
+                                <connections>
+                                    <action selector="Changee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrR-8v-6qt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LEr-vo-u4B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="889-dX-oKD"/>
+                            <constraint firstItem="KO6-tc-cNw" firstAttribute="centerX" secondItem="TJv-7e-mYo" secondAttribute="centerX" id="DoA-x0-TEw"/>
+                            <constraint firstItem="LEr-vo-u4B" firstAttribute="centerX" secondItem="KO6-tc-cNw" secondAttribute="centerX" id="Wmb-u4-wmp"/>
+                            <constraint firstItem="LEr-vo-u4B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="cxo-ob-A59"/>
+                            <constraint firstItem="LEr-vo-u4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gG9-Rl-N7s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TJv-7e-mYo" secondAttribute="bottom" constant="135" id="lbh-cI-iVo"/>
+                            <constraint firstItem="KO6-tc-cNw" firstAttribute="top" secondItem="LEr-vo-u4B" secondAttribute="bottom" constant="46" id="q4j-e5-0kn"/>
+                            <constraint firstItem="KO6-tc-cNw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="rx0-ha-XE8"/>
+                            <constraint firstItem="TJv-7e-mYo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="vkb-GY-k2A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HelloLabel" destination="LEr-vo-u4B" id="dZI-1g-tEJ"/>
+                        <outlet property="ImageView" destination="KO6-tc-cNw" id="kHC-Ue-hmB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pexels-nicole-avagliano-2312040" width="6000" height="4000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
